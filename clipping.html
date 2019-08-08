@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Clipping Edit</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+
+
+  <div class="container">
+
+    <div class="title-catalog row mt-4 pt-3 pb-3">
+      <div class="col-12 d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+          <h6 class="mb-0">Clipping Module / Estaciones de Radio / Edicion</h6>
+        </div>
+
+        <div>
+          <a class="btn text-white" style="background-color: #4FC6E1;">Guardar <i class="fas fa-history"></i></a>
+          <a class="btn text-white" style="background-color: #4A81D4;">Volver <i class="fas fa-edit"></i></a>
+        </div>
+        
+      </div>
+    </div>
+
+  
+
+
+    <div class="row mt-5">
+
+      <div class="col-5">
+
+        <div class="card card-catalog">
+          <div class="card-body">
+
+            <h6 class="text-center">Multimedia</h6>
+
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="fecha">Fecha</label>
+                  <input class="form-control" type="date" name="" placeholder="Fecha">
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="my-select">Pieza</label>
+                  <select id="my-select" class="form-control" name="">
+                    <option>Uno.mp4</option>
+                    <option>Dos.mp4</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="col-7">
+        <div class="card card-catalog">
+          <div class="card-body">
+
+            <h6 class="text-center">Formulario</h6>
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Nota 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Nota 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">+</a>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                
+                <div class="form-group">
+                  <label for="my-input">Titular</label>
+                  <input id="my-input" class="form-control" type="text" name="">
+                </div>
+
+                <div class="form-group">
+                  <label for="my-select">Programas</label>
+                  <select id="my-select" class="form-control" name="">
+                    <option>Text</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="cunas">Cuñas</label>
+                  <input id="cunas" class="form-control" type="text" name="">
+                </div>
+
+                <div class="form-group">
+                  <label for="my-textarea">Resumen de nota</label>
+                  <textarea id="my-textarea" class="form-control" name="" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="cunas">Apariciones</label>
+                  <input id="cunas" class="form-control" type="text" name="">
+                </div>
+
+
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  
+  
+  </div>
+
+</body>
+</html>
