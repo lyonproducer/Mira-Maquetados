@@ -104,24 +104,24 @@
             <div class="row mt-3 d-flex justify-content-between">
 
               <div class="col text-center ">
-                <a class="btn m-2 text-white" style="background-color: #26A995;" data-toggle="tooltip" data-placement="top" title="Marcar Inicio">
+                <a class="btn m-2 text-white marca" style="background-color: #26A995;" data-toggle="tooltip" data-placement="top" title="Marcar Inicio">
                   <i class="fas fa-door-open"></i></a>
-                <a class="btn m-2 text-white" style="background-color: #26A995;" data-toggle="tooltip" data-placement="top" title="marcar Fin">
+                <a class="btn m-2 text-white marca2" style="background-color: #26A995;" data-toggle="tooltip" data-placement="top" title="marcar Fin">
                   <i class="fas fa-door-closed"></i></a>
               </div>
 
               <div class="col text-center ">
-                <a class="btn m-2 text-white" style="background-color: #4A81D4;" data-toggle="tooltip" data-placement="top" title="Retroceder">
+                <a class="btn m-2 text-white velocidad" style="background-color: #4A81D4;" data-toggle="tooltip" data-placement="top" title="Retroceder">
                   <i class="fas fa-backward"></i></a>
-                <a class="btn m-2 text-white" style="background-color: #4A81D4;" data-toggle="tooltip" data-placement="top" title="Avanzar">
+                <a class="btn m-2 text-white velocidad2" style="background-color: #4A81D4;" data-toggle="tooltip" data-placement="top" title="Avanzar">
                   <i class="fas fa-forward"></i></a>
               </div>
 
               <div class="col text-center ">
-                <a class="btn m-2 text-white" style="background-color: #4A81D4;" data-toggle="tooltip" data-placement="top" title="Anterior">
+                <a class="btn m-2 text-white anterior" style="background-color: #4A81D4;" data-toggle="tooltip" data-placement="top" title="Anterior">
                   <i
                     class="fas fa-step-backward"></i></a>
-                <a class="btn m-2 text-white" style="background-color: #4A81D4;" data-toggle="tooltip" data-placement="top" title="Siguiente">
+                <a class="btn m-2 text-white siguiente" style="background-color: #4A81D4;" data-toggle="tooltip" data-placement="top" title="Siguiente">
                   <i class="fas fa-step-forward"></i></a>
               </div>
 
@@ -334,6 +334,87 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
+  $(document).ready(function(e) { 
+
+    //Botones para marca 
+    $(".marca").click(function(){
+      $(".marca").addClass("verde");
+      setTimeout(() => {
+        $(".marca").removeClass("verde");
+      }, 250);
+    });
+
+    $(".marca2").click(function(){
+      $(".marca2").addClass("verde");
+      setTimeout(() => {
+        $(".marca2").removeClass("verde");
+      }, 250);
+    });
+
+
+    //Botones para retroceder
+    var azulAtras=false;
+    $(".velocidad").click(function(){
+      if(azulAtras){
+        $(".velocidad").addClass("azul");
+        azulAtras=!azulAtras;
+      }else{
+        $(".velocidad").removeClass("azul");
+        azulAtras=!azulAtras;
+      }
+    });
+
+    var azulAlante=false;
+    $(".velocidad2").click(function(){
+      if(azulAlante){
+        $(".velocidad2").addClass("azul");
+        azulAlante=!azulAlante;
+      }else{
+        $(".velocidad2").removeClass("azul");
+        azulAlante=!azulAlante;
+      }
+    });
+
+    //Botones para siguiente y anterior
+    var azulAnterior=false;
+    $(".anterior").click(function(){
+      if(azulAnterior){
+        $(".anterior").addClass("azul");
+        azulAnterior=!azulAnterior;
+      }else{
+        $(".anterior").removeClass("azul");
+        azulAnterior=!azulAnterior;
+      }
+    });
+
+    var azulSiguiente=false;
+    $(".siguiente").click(function(){
+      if(azulSiguiente){
+        $(".siguiente").addClass("azul");
+        azulSiguiente=!azulSiguiente;
+      }else{
+        $(".siguiente").removeClass("azul");
+        azulSiguiente=!azulSiguiente;
+      }
+    });
+  })
+
+
+
 </script>
+
+<style>
+
+  .verde{
+    background-color: rgb(30, 136, 120) !important;
+  }
+  .azul{
+    background-color: rgb(54, 93, 153) !important;
+  }
+  .morado{
+    background-color: rgb(65, 56, 139) !important;
+  }
+
+</style>
 
 </html>
