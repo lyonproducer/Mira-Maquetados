@@ -34,8 +34,8 @@
         </div>
 
         <div>
-          <a class="btn text-white" style="background-color: #6658DD;">Guardar <i class="far fa-save"></i></a>
-          <a class="btn text-white" style="background-color: #4FC6E1;">Volver <i class="fas fa-backspace"></i></a>
+          <a class="btn text-white" style="background-color: #6658DD;" data-toggle="tooltip" data-placement="top" title="Públicar">Publicar <i class="far fa-save"></i></a>
+          <a class="btn text-white" style="background-color: #4FC6E1;" data-toggle="tooltip" data-placement="top" title="Volver al Catalogo">Volver <i class="fas fa-backspace"></i></a>
         </div>
 
       </div>
@@ -50,7 +50,7 @@
       </div>
 
       <div class="col-12 d-flex justify-content-between mt-2">
-        <a class="btn text-white" style="background-color: #6658DD;">Guardar <i class="far fa-save"></i></a>
+        <a class="btn text-white" style="background-color: #6658DD;">Publicar <i class="far fa-save"></i></a>
         <a class="btn text-white" style="background-color: #4FC6E1;">Volver <i class="fas fa-backspace"></i></a>
       </div>
     </div>
@@ -104,24 +104,32 @@
             <div class="row mt-3 d-flex justify-content-between">
 
               <div class="col text-center ">
-                <a class="btn m-2 text-white" style="background-color: #26A995;"><i class="fas fa-door-open"></i></a>
-                <a class="btn m-2 text-white" style="background-color: #26A995;"><i class="fas fa-door-closed"></i></a>
+                <a class="btn m-2 text-white" style="background-color: #26A995;" data-toggle="tooltip" data-placement="top" title="Marcar Inicio">
+                  <i class="fas fa-door-open"></i></a>
+                <a class="btn m-2 text-white" style="background-color: #26A995;" data-toggle="tooltip" data-placement="top" title="marcar Fin">
+                  <i class="fas fa-door-closed"></i></a>
               </div>
 
               <div class="col text-center ">
-                <a class="btn m-2 text-white" style="background-color: #4A81D4;"><i class="fas fa-backward"></i></a>
-                <a class="btn m-2 text-white" style="background-color: #4A81D4;"><i class="fas fa-forward"></i></a>
+                <a class="btn m-2 text-white" style="background-color: #4A81D4;" data-toggle="tooltip" data-placement="top" title="Retroceder">
+                  <i class="fas fa-backward"></i></a>
+                <a class="btn m-2 text-white" style="background-color: #4A81D4;" data-toggle="tooltip" data-placement="top" title="Avanzar">
+                  <i class="fas fa-forward"></i></a>
               </div>
 
               <div class="col text-center ">
-                <a class="btn m-2 text-white" style="background-color: #4A81D4;"><i
+                <a class="btn m-2 text-white" style="background-color: #4A81D4;" data-toggle="tooltip" data-placement="top" title="Anterior">
+                  <i
                     class="fas fa-step-backward"></i></a>
-                <a class="btn m-2 text-white" style="background-color: #4A81D4;"><i class="fas fa-step-forward"></i></a>
+                <a class="btn m-2 text-white" style="background-color: #4A81D4;" data-toggle="tooltip" data-placement="top" title="Siguiente">
+                  <i class="fas fa-step-forward"></i></a>
               </div>
 
               <div class="col text-center ">
-                <a class="btn m-2 text-white" style="background-color: #6658DD;"><i class="fas fa-pause"></i></a>
-                <a class="btn m-2 text-white" style="background-color: #6658DD;"><i class="fas fa-play"></i></a>
+                <a class="btn m-2 text-white" style="background-color: #6658DD;" data-toggle="tooltip" data-placement="top" title="Pausa">
+                  <i class="fas fa-pause"></i></a>
+                <a class="btn m-2 text-white" style="background-color: #6658DD;" data-toggle="tooltip" data-placement="top" title="Play">
+                  <i class="fas fa-play"></i></a>
               </div>
 
             </div>
@@ -319,5 +327,13 @@
 
   </div>
 </body>
+
+<script>
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+</script>
 
 </html>
